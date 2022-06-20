@@ -9,5 +9,5 @@ test.o: main.cpp solu.h
 	g++ -c -g $< -o $@
 
 clean:
-	rm *.o test
+	@rm *.o test
 
