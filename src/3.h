@@ -1,23 +1,6 @@
 #ifndef __SOLU_H__
 #define __SOLU_H__
-#include <string>
-#include <map>
-#include <vector>
-#include <set>
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
-using namespace std;
-
-#define CHECK_INT(a, b) do { \
-    long long int x = (a); \
-    long long int y = (b); \
-    if (x != y) { \
-        printf("FAILED! => output: %lld, expected: %lld\n", x, y); \
-    } else { \
-        printf("pass.\n"); \
-    }\
-} while(0)
+#include "utils.h"
 
 class Solution {
     public:

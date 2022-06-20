@@ -1,5 +1,15 @@
 #ifndef __UTILS_H__
 #define __UTILS_H__
+#include <string>
+#include <map>
+#include <vector>
+#include <set>
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include "./inc/utils.h"
+#include "./inc/ListNode.h"
+using namespace std;
 
 #define CHECK_INT(a, b) do { \
     long long int x = (a); \

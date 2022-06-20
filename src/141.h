@@ -1,15 +1,6 @@
 #ifndef __SOLU_H__
 #define __SOLU_H__
-#include <string>
-#include <map>
-#include <vector>
-#include <set>
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
-#include "./inc/utils.h"
-#include "./inc/ListNode.h"
-using namespace std;
+#include "utils.h"
 
 class Solution {
     public:
