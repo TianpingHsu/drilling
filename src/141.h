@@ -1,5 +1,3 @@
-#ifndef __SOLU_H__
-#define __SOLU_H__
 #include "utils.h"
 
 class Solution {
@@ -19,4 +17,3 @@ class Solution {
         }
 };
 
-#endif

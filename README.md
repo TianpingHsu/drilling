@@ -1,5 +1,5 @@
 # coding-interview
-常见的面试编码题
+High frequency interview questions.
 
 ## [3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/)
 [solu](./src/3.h)
@@ -21,3 +21,15 @@
 
 ## [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/)
 [solu](./src/20.h)
+
+## [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/)
+[solu](./src/215.h)
+
+## [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/)
+[solu](./src/160.h)
+
+## [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/)
+[solu](./src/121.h)
+
+## [15. 三数之和](https://leetcode.cn/problems/3sum/)
+[solu](./src/15.h)

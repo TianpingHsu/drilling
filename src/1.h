@@ -17,4 +17,7 @@ public:
         }
         return {i, j};
     }
+    void test() {
+
+    }
 };
