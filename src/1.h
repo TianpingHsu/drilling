@@ -1,3 +1,4 @@
+#include "utils.h"
 class Solution {
     int cur = 0;
     int search(int target, const vector<int> &nums) {

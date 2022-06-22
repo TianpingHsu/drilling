@@ -1,3 +1,4 @@
+#include "utils.h"
 class Solution {
     int *memo;
     int n;
