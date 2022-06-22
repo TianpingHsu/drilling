@@ -48,3 +48,6 @@ High frequency interview questions.
 
 ## [146. LRU 缓存](https://leetcode.cn/problems/lru-cache/)
 [solu](./src/146.h)
+
+## [72. 编辑距离](https://leetcode.cn/problems/edit-distance/)
+[solu](./src/72.h)

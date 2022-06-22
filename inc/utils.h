@@ -12,6 +12,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
+#include <assert.h>
 #include "ListNode.h"
 #include "TreeNode.h"
 using namespace std;
@@ -34,6 +35,10 @@ using namespace std;
 #define BOLDMAGENTA "\033[1m\033[35m"      /* Bold Magenta */
 #define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
 #define BOLDWHITE   "\033[1m\033[37m"      /* Bold White */
+
+#define newline() do { printf("\n"); } while(0)
+
+#define MSG(msg) do {cout << msg << endl;} while (0)
 
 #define CHECK_INT(a, b) do { \
     long long int x = (a); \
@@ -61,8 +66,23 @@ using namespace std;
     cout << endl; \
 } while(0)
 
-#define newline() do { printf("\n"); } while(0)
+#define PRINT_MATRIX(matrix) do { \
+    for (auto row : matrix) { \
+        PRINT_VEC(row); \
+    } \
+} while(0)
 
-#define MSG(msg) do {cout << msg << endl;} while (0)
+/*
+ * code comes from here:
+ * https://ideone.com/IfOL44
+ */
+template<typename T, typename... Args>
+T vmin( T arg1, Args&&... args )
+{
+    T *p[] = { &arg1, &args... };
+
+    return **std::min_element( begin(p), end(p),
+            [](T *a, T *b) { return *a < *b; } );
+}
 
 #endif
