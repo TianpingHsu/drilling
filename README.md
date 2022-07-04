@@ -109,3 +109,8 @@ High frequency interview questions.
 ## [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/)
 [solu](./src/124.h)
 
+## [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+[solu](./src/300.h)
+
+## [56. 合并区间](https://leetcode.cn/problems/merge-intervals/)
+[solu](./src/56.h)

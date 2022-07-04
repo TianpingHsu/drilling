@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <queue>
+#include <stack>
 #include <list>
 #include <map>
 #include <unordered_map>
@@ -46,7 +47,7 @@ using namespace std;
     auto y = (b); \
     if (x != y) { \
         printf(RED "FAILED! %s != %s => ", #a, #b); \
-        std::cout << x << " , " << y; \
+        std::cout << " { " << x << " , " << y << " } "; \
         printf(" in %s() %s:%d\n" RESET, __func__, __FILE__, __LINE__); \
     } else { \
         printf("pass.\n"); \
