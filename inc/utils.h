@@ -12,6 +12,7 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
+#include <cstring>
 #include <assert.h>
 #include "ListNode.h"
 #include "TreeNode.h"
@@ -40,23 +41,16 @@ using namespace std;
 
 #define MSG(msg) do {cout << msg << endl;} while (0)
 
-#define CHECK_INT(a, b) do { \
-    long long int x = (a); \
-    long long int y = (b); \
+#define CHECK(a, b) do { \
+    auto x = (a); \
+    auto y = (b); \
     if (x != y) { \
-        printf(RED "FAILED! => output: %lld, expected: %lld\n" RESET, x, y); \
+        printf(RED "FAILED! %s != %s => ", #a, #b); \
+        std::cout << x << " , " << y; \
+        printf(" in %s() %s:%d\n" RESET, __func__, __FILE__, __LINE__); \
     } else { \
         printf("pass.\n"); \
     }\
-} while(0)
-
-#define CHECK_BOOL(a, b) do {\
-    bool x = (a); \
-    if (x != b) { \
-        printf(RED "FAILED! => output: %s, expected: %s\n" RESET, x ? "true" : "false", y ? "true" : "false"); \
-    } else { \
-        printf("pass.\n"); \
-    } \
 } while(0)
 
 #define PRINT_VEC(v) do { \
