@@ -114,3 +114,19 @@ High frequency interview questions.
 
 ## [56. 合并区间](https://leetcode.cn/problems/merge-intervals/)
 [solu](./src/56.h)
+
+## [129. 求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers/)
+[solu](./src/129.h)
+
+## [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)
+[solu](./src/69.h)
+
+## [2. 两数相加](https://leetcode.cn/problems/add-two-numbers/)
+[solu](./src/2.h)
+
+## [82. 删除排序链表中的重复元素 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/)
+[solu](./src/82.h)
+
+## [144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
+[solu](./src/144.h)
+
