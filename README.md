@@ -130,3 +130,6 @@ High frequency interview questions.
 ## [144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/)
 [solu](./src/144.h)
 
+## [151. 颠倒字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/)
+[solu](./src/151.h)
+

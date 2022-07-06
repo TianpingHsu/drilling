@@ -44,11 +44,11 @@ using namespace std;
 
 #define CHECK(a, b) do { \
     auto x = (a); \
-    auto y = (b); \
+    decltype(x) y = (b); \
     if (x != y) { \
-        printf(RED "FAILED! %s != %s => ", #a, #b); \
-        std::cout << " { " << x << " , " << y << " } "; \
-        printf(" in %s() %s:%d\n" RESET, __func__, __FILE__, __LINE__); \
+        printf(RED "FAILED! "); \
+        std::cout << "{" << y << "," << x << "}"; \
+        printf(" %s != %s in %s() %s:%d\n" RESET, #a, #b, __func__, __FILE__, __LINE__); \
     } else { \
         printf("pass.\n"); \
     }\

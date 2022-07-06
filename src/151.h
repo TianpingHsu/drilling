@@ -31,6 +31,6 @@ public:
         CHECK(reverseWords(""), string(""));
         CHECK(reverseWords(" "), string(""));
         CHECK(reverseWords(" ab "), string("ab"));
-        CHECK(reverseWords("  world  "), "world ");
+        CHECK(reverseWords("  world  "), string("world"));
     }
 };
