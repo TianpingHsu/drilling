@@ -152,3 +152,9 @@ High frequency interview questions.
 ## [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/)
 [solu](./src/101.h)
 [more](https://leetcode.cn/problems/symmetric-tree/solution/dui-cheng-er-cha-shu-by-leetcode-solution/)
+
+## [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)
+[solu](./src/226.h)
+
+## [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/)
+[solu](./src/98.h)
