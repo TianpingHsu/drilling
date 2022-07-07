@@ -1,0 +1,18 @@
+#include "utils.h"
+
+class Solution {
+    int height(TreeNode *root) {
+        if (!root) return 0;
+        return max(height(root->left), height(root->right)) + 1;
+    }
+public:
+    bool isBalanced(TreeNode* root) {
+        if (!root) return true;
+        int l = height(root->left), r = height(root->right);
+        if (std::abs(l - r) <= 1) {
+            return isBalanced(root->left) && isBalanced(root->right);
+        } else {
+            return false;
+        }
+    }
+};

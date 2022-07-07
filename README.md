@@ -133,3 +133,22 @@ High frequency interview questions.
 ## [151. 颠倒字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/)
 [solu](./src/151.h)
 
+## [148. 排序链表](https://leetcode.cn/problems/sort-list/)
+[solu](./src/148.h)
+[more](https://leetcode.cn/problems/sort-list/solution/pai-xu-lian-biao-by-leetcode-solution/)
+
+## [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
+[solu](./src/104.h)
+
+## [155. 最小栈](https://leetcode.cn/problems/min-stack/)
+[solu](./src/155.h)
+
+## [110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/)
+[solu](./src/110.h)
+
+## [78. 子集](https://leetcode.cn/problems/subsets/)
+[solu](./src/78.h)
+
+## [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/)
+[solu](./src/101.h)
+[more](https://leetcode.cn/problems/symmetric-tree/solution/dui-cheng-er-cha-shu-by-leetcode-solution/)
