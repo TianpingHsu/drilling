@@ -11,6 +11,7 @@
 #include <set>
 #include <unordered_set>
 #include <iostream>
+#include <sstream>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -79,5 +80,9 @@ T vmin( T arg1, Args&&... args )
     return **std::min_element( begin(p), end(p),
             [](T *a, T *b) { return *a < *b; } );
 }
+
+TreeNode* createTree(string s);
+ListNode* createList(string s);
+std::vector<std::string> split(const std::string &s, char delim);
 
 #endif

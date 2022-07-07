@@ -1,36 +1,25 @@
 #include "utils.h"
 
 class Solution {
-    void getTokens(const string &s, vector<string> &tokens) {
-        for (size_t i = 0; i < s.size(); i++) {
-            while (s[i] == ' ') i++;  // skip
-            size_t j = i;
-            while (j < s.size() && s[j] != ' ') j++;
-            string token;
-            for (size_t k = i; k < j ;k++) token.push_back(s[k]);
-            if (!token.empty())tokens.push_back(token);
-            i = j;
-        }
+    vector<int> v;
+    void inorder(TreeNode* root) {
+        if (!root) return;
+        inorder(root->left);
+        v.push_back(root->val);
+        inorder(root->right);
     }
 public:
-    string reverseWords(string s) {
-        std::reverse(s.begin(), s.end());
-        vector<string> tokens;
-        getTokens(s, tokens);
-        s.clear();
-        for (size_t i = 0; i < tokens.size(); i++) {
-            std::reverse(tokens[i].begin(), tokens[i].end());
-            s += tokens[i];
-            if (i != tokens.size() - 1) s += ' ';
-        }
-        return s;
-    }
-
     void test() {
-        CHECK(reverseWords("the sky is blue"), string("blue is sky the"));
-        CHECK(reverseWords(""), string(""));
-        CHECK(reverseWords(" "), string(""));
-        CHECK(reverseWords(" ab "), string("ab"));
-        CHECK(reverseWords("  world  "), "world ");
+        TreeNode *root = createTree("[5,1,4,null,null,3,6]");
+        inorder(root);
+        PRINT_VEC(v);
+
+        v.clear();
+        ListNode *head = createList("[4,2,1,3]");
+        while (head) {
+            v.push_back(head->val);
+            head = head->next;
+        }
+        PRINT_VEC(v);
     }
 };
