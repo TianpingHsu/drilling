@@ -1,5 +1,4 @@
 #include "utils.h"
-
 /*
  brute force
 class Solution {

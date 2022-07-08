@@ -158,3 +158,16 @@ High frequency interview questions.
 
 ## [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/)
 [solu](./src/98.h)
+
+## [543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)
+[solu](./src/543.h)
+
+## [112. 路径总和](https://leetcode.cn/problems/path-sum/)
+[solu](./src/112.h)
+
+## [169. 多数元素](https://leetcode.cn/problems/majority-element/)
+[solu](./src/169.h)
+
+## [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/)
+[solu](./src/34.h)
+

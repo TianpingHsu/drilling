@@ -2,11 +2,12 @@
 #include "utils.h"
 
 TreeNode* createTree(string s) {
-    for (auto it = s.begin(); it != s.end(); it++) {
+    for (auto it = s.begin(); it != s.end();) {
         if (*it == ' ' || *it == '[' || *it == ']') {
             it = s.erase(it);
-            if (it == s.end()) break;
+            continue;
         }
+        it++;
     }
     if (s.empty()) return NULL;
     vector<string> vs = split(s, ',');
@@ -29,11 +30,12 @@ TreeNode* createTree(string s) {
 }
 
 ListNode* createList(string s) {
-    for (auto it = s.begin(); it != s.end(); it++) {
+    for (auto it = s.begin(); it != s.end(); ) {
         if (*it == ' ' || *it == '[' || *it == ']') {
             it = s.erase(it);
-            if (it == s.end()) break;
+            continue;
         }
+        it++;
     }
     if (s.empty()) return NULL;
     vector<string> vs = split(s, ',');
@@ -45,6 +47,23 @@ ListNode* createList(string s) {
         p = p->next;
     }
     return dummy.next;
+}
+
+vector<int> createVector(string s) {
+    vector<int> v;
+    for (auto it = s.begin(); it != s.end();) {
+        if (*it == ' ' || *it == '[' || *it == ']') {
+            it = s.erase(it);
+            continue;
+        }
+        it++;
+    }
+    if (s.empty()) return v;
+    vector<string> vs = split(s, ',');
+    for (auto x : vs) {
+        v.push_back(stoi(x));
+    }
+    return v;
 }
 
 std::vector<std::string> split(const std::string &s, char delim = ',') {

@@ -81,8 +81,10 @@ T vmin( T arg1, Args&&... args )
             [](T *a, T *b) { return *a < *b; } );
 }
 
-TreeNode* createTree(string s);
-ListNode* createList(string s);
+TreeNode* createTree(std::string s);
+ListNode* createList(std::string s);
 std::vector<std::string> split(const std::string &s, char delim);
+std::vector<int> createVector(std::string s);
+//std::vector<vector<int>> createMatrix(std::string s);
 
 #endif
