@@ -48,7 +48,7 @@ using namespace std;
     decltype(x) y = (b); \
     if (x != y) { \
         printf(RED "FAILED! "); \
-        std::cout << "{" << y << "," << x << "}"; \
+        std::cout << "{" << x << "," << y << "}"; \
         printf(" %s != %s in %s() %s:%d\n" RESET, #a, #b, __func__, __FILE__, __LINE__); \
     } else { \
         printf("pass.\n"); \

@@ -171,3 +171,65 @@ High frequency interview questions.
 ## [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/)
 [solu](./src/34.h)
 
+## [14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/)
+[solu](./src/14.h)
+
+## [165. 比较版本号](https://leetcode.cn/problems/compare-version-numbers/)
+[solu](./src/165.h)
+
+## [39. 组合总和](https://leetcode.cn/problems/combination-sum/)
+[solu](./src/39.h)
+
+## [179. 最大数](https://leetcode.cn/problems/largest-number/)
+[solu](./src/179.h)
+
+## [225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/)
+[solu](./src/225.h)
+
+## [62. 不同路径](https://leetcode.cn/problems/unique-paths/)
+[solu](./src/62.h)
+
+## [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+[solu](./src/offer36.h)
+
+## [145. 二叉树的后序遍历](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+[solu](./src/145.h)
+
+## [125. 验证回文串](https://leetcode.cn/problems/valid-palindrome/)
+[solu](./src/125.h)
+
+## [26. 删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)
+[solu](./src/26.h)
+
+## [264. 丑数 II](https://leetcode.cn/problems/ugly-number-ii/)
+[solu](./src/264.h)
+
+## [222. 完全二叉树的节点个数](https://leetcode.cn/problems/count-complete-tree-nodes/)
+[solu](./src/222.h)
+[more](https://leetcode.cn/problems/count-complete-tree-nodes/solution/wan-quan-er-cha-shu-de-jie-dian-ge-shu-by-leetco-2/)
+
+## [202. 快乐数](https://leetcode.cn/problems/happy-number/)
+[solu](./src/202.h)
+[more](https://leetcode.cn/problems/happy-number/solution/kuai-le-shu-by-leetcode-solution/)
+
+## [剑指 Offer 27. 二叉树的镜像](https://leetcode.cn/problems/er-cha-shu-de-jing-xiang-lcof/)
+[solu](./src/offer27.h)
+
+## [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/)
+[solu](./src/42.h)
+[more](https://leetcode.cn/problems/trapping-rain-water/solution/jie-yu-shui-by-leetcode-solution-tuvc/)
+
+## [162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/)
+[solu](./src/162.h)
+
+## [61. 旋转链表](https://leetcode.cn/problems/rotate-list/)
+[solu](./src/61.h)
+
+## [328. 奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/)
+[solu](./src/328.h)
+
+## [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/)
+[solu](./src/24.h)
+
+## [剑指 Offer 31. 栈的压入、弹出序列](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+[solu](./src/offer31.h)
