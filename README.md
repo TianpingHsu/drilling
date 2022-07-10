@@ -233,3 +233,9 @@ High frequency interview questions.
 
 ## [剑指 Offer 31. 栈的压入、弹出序列](https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
 [solu](./src/offer31.h)
+
+## [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+[solu](./src/offer54.h)
+
+## [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/)
+[solu](./src/73.h)
