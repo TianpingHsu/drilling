@@ -15,7 +15,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
-#include <assert.h>
+#include <climits>
+#include <cassert>
 #include "ListNode.h"
 #include "TreeNode.h"
 using namespace std;

@@ -239,3 +239,17 @@ High frequency interview questions.
 
 ## [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/)
 [solu](./src/73.h)
+
+## [572. 另一棵树的子树](https://leetcode.cn/problems/subtree-of-another-tree/)
+[solu](./src/572.h)
+[more](https://leetcode.cn/problems/subtree-of-another-tree/solution/ling-yi-ge-shu-de-zi-shu-by-leetcode-solution/)
+
+## [443. 压缩字符串](https://leetcode.cn/problems/string-compression/)
+[solu](./src/443.h)
+
+## [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/)
+[solu](./src/64.h)
+
+## [8. 字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/)
+[solu](./src/8.h)
+[another `Finite State Machine` question](https://leetcode.cn/problems/valid-number/solution/you-xiao-shu-zi-by-leetcode-solution-298l/)
