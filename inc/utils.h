@@ -69,6 +69,10 @@ using namespace std;
     } \
 } while(0)
 
+#define OUT(x) do { \
+    cout << x << endl; \
+} while(0)
+
 /*
  * code comes from here:
  * https://ideone.com/IfOL44

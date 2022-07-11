@@ -253,3 +253,22 @@ High frequency interview questions.
 ## [8. 字符串转换整数 (atoi)](https://leetcode.cn/problems/string-to-integer-atoi/)
 [solu](./src/8.h)
 [another `Finite State Machine` question](https://leetcode.cn/problems/valid-number/solution/you-xiao-shu-zi-by-leetcode-solution-298l/)
+
+## [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/)
+[solu](./src/4.h)
+
+## [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)
+[solu](./src/695.h)
+
+## [71. 简化路径](https://leetcode.cn/problems/simplify-path/)
+[solu](./src/71.h)
+
+## [剑指 Offer 14- I. 剪绳子](https://leetcode.cn/problems/jian-sheng-zi-lcof/)
+[solu](./src/offer14-I.h)
+
+## [剑指 Offer 48. 最长不含重复字符的子字符串](https://leetcode.cn/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+[solu](./src/offer48.h)
+
+## [863. 二叉树中所有距离为 K 的结点](https://leetcode.cn/problems/all-nodes-distance-k-in-binary-tree/)
+[solu](./src/863.h)
+
