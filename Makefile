@@ -11,7 +11,7 @@ test: test.o
 	@mv *.o ${BIN_DIR}
 
 test.o: ./src/main.cpp solu.h
-	g++ -c -g $< -o $@ -I./inc -I./
+	g++ -c -g -DTEST $< -o $@ -I./inc -I./
 
 clean:
 	@rm ${BIN_DIR}* -rf
