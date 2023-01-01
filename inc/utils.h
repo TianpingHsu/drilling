@@ -91,6 +91,7 @@ TreeNode* createTree(std::string s);
 ListNode* createList(std::string s);
 std::vector<std::string> split(const std::string &s, char delim);
 std::vector<int> createVector(std::string s);
+void printList(const ListNode*);
 //std::vector<vector<int>> createMatrix(std::string s);
 
 #endif

@@ -17,6 +17,7 @@
 ## two pointers
 * [container-with-most-water](https://leetcode.cn/problems/container-with-most-water/description/) -> [solu](./src/two_pointers/11.h)
 * [3sum](https://leetcode.cn/problems/3sum/) -> [solu](./src/two_pointers/15.h)
+* [remove-nth-node-from-end-of-list](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) -> [solu](./src/two_pointers/19.h)
 
 ## dynamic programming
 * [edit-distance](https://leetcode.cn/problems/edit-distance/) -> [solu](./src/dp/72.h)
