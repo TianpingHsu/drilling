@@ -1,33 +1,46 @@
 
 #include "utils.h"
+
 class Solution {
 public:
-    bool isAlphaBeta(char &c) {
-        if (c >= 'a' && c <= 'z') return true;
-        if (c >= 'A' && c <= 'Z') {
-            c = c - 'A' + 'a';
-            return true;
+    void moveForward(vector<int>& nums, int k) {
+        while (k < nums.size() - 1) {
+            nums[k] = nums[k + 1];
+            k++;
         }
-        if (c >= '0' && c <= '9') return true;
-        return false;
     }
-    bool isPalindrome(string s) {
-        string ret;
-        for (auto c : s) {
-            if (isAlphaBeta(c)) ret.push_back(c);
+    void moveZeroes(vector<int>& nums) {
+        int count = 0;
+        for (int i = 0; i < nums.size() - count; i++) {
+            while (nums[i] == 0 && count < nums.size()) {
+                count++;
+                moveForward(nums, i);
+                nums[nums.size() - 1] = -1;
+            } 
         }
-        s.clear();
-        s = ret;
-        int i = 0, j = s.size() - 1;
-        while (i <= j) {
-            if (s[i++] != s[j--]) return false;
+        int i = nums.size() - 1;
+        while (count--) {
+            nums[i--] = 0;
         }
-        return true;
     }
 #ifdef TEST
     void test() {
-        CHECK(isPalindrome("A man, a plan, a canal: Panama"), true);
-        CHECK(isPalindrome("race a car"), false);
+        vector<int> v;
+        v = createVector("[0,1,0,3,12]");
+        moveZeroes(v);
+        PRINT_VEC(v);
+
+        v = createVector("[0]");
+        moveZeroes(v);
+        PRINT_VEC(v);
+
+        v = createVector("[0,1,0]");
+        moveZeroes(v);
+        PRINT_VEC(v);
+
+        v = createVector("[0,0,1]");
+        moveZeroes(v);
+        PRINT_VEC(v);
     }
 #endif
 };

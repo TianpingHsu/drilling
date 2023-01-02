@@ -32,6 +32,8 @@
 * [merge-sorted-array](https://leetcode.cn/problems/merge-sorted-array/) -> [solu](./src/two_pointers/88.h)
 * [remove-duplicates-from-sorted-list-ii](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) -> [solu](./src/two_pointers/82.h)
 * [valid-palindrome](https://leetcode.cn/problems/valid-palindrome/) -> [solu](./src/two_pointers/125.h)
+* [happy-number](https://leetcode.cn/problems/happy-number/) -> [solu](./src/two_pointers/202.h)
+* [move-zeroes](https://leetcode.cn/problems/move-zeroes/) -> [solu](./src/two_pointers/283.h)
 
 ## list
 * [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) -> [solu](./src/list/206.h)
