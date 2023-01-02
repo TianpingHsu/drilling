@@ -23,6 +23,16 @@
 * [3sum](https://leetcode.cn/problems/3sum/) -> [solu](./src/two_pointers/15.h)
 * [remove-nth-node-from-end-of-list](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) -> [solu](./src/two_pointers/19.h)
 * [is-substring](https://leetcode.cn/problems/is-subsequence/) -> [solu](./src/two_pointers/392.h)
+* [intersection-of-two-arrays](https://leetcode.cn/problems/intersection-of-two-arrays/) -> [solu](./src/two_pointers/349.h)
+* [reverse-vowels-of-a-string](https://leetcode.cn/problems/reverse-vowels-of-a-string/) -> [solu](./src/two_pointers/345.h)
+* [reverse-string](https://leetcode.cn/problems/reverse-string/) -> [solu](./src/two_pointers/344.h)
+* [string-compression](https://leetcode.cn/problems/string-compression/) -> [solu](./src/two_pointers/443.h)
+* [assign-cookies](https://leetcode.cn/problems/assign-cookies/) -> [solu](./src/two_pointers/455.h)
+* [rotate-list](https://leetcode.cn/problems/rotate-list/) -> [solu](./src/two_pointers/61.h)
+* [merge-sorted-array](https://leetcode.cn/problems/merge-sorted-array/) -> [solu](./src/two_pointers/88.h)
+* [remove-duplicates-from-sorted-list-ii](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii/) -> [solu](./src/two_pointers/82.h)
+* [valid-palindrome](https://leetcode.cn/problems/valid-palindrome/) -> [solu](./src/two_pointers/125.h)
 
 ## list
 * [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) -> [solu](./src/list/206.h)
+
