@@ -36,6 +36,7 @@
 * [valid-palindrome](https://leetcode.cn/problems/valid-palindrome/) -> [solu](./src/two_pointers/125.h)
 * [happy-number](https://leetcode.cn/problems/happy-number/) -> [solu](./src/two_pointers/202.h)
 * [move-zeroes](https://leetcode.cn/problems/move-zeroes/) -> [solu](./src/two_pointers/283.h)
+* [trapping-rain-water](https://leetcode.cn/problems/trapping-rain-water/) -> [solu](./src/two_pointers/42.h)
 
 ## list
 * [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) -> [solu](./src/list/206.h)
