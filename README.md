@@ -17,6 +17,7 @@
 * [longest-common-subsequence](https://leetcode.cn/problems/longest-common-subsequence/) -> [solu](./src/dp/1143.h)
 * [fibonacci-number](https://leetcode.cn/problems/fibonacci-number/) -> [solu](./src/dp/509.h)
 * [longest-increasing-subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) -> [solu](./src/dp/300.h)
+* [coin-change](https://leetcode.cn/problems/coin-change/) -> [solu](./src/dp/322.h)
 
 ## sliding window
 * [longest-substring-without-repeating-characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) -> [solu](./src/sliding_window/3.h)
