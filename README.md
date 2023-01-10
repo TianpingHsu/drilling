@@ -22,6 +22,7 @@
 ## dfs
 * [subsets](https://leetcode.cn/problems/subsets/) -> [solu](./src/dfs/78.h)
 * [permutations](https://leetcode.cn/problems/permutations/) -> [solu](./src/dfs/46.h)
+* [combinations](https://leetcode.cn/problems/combinations/) -> [solu](./src/dfs/77.h)
 
 ## sliding window
 * [longest-substring-without-repeating-characters](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) -> [solu](./src/sliding_window/3.h)
