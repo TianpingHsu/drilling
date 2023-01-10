@@ -76,18 +76,6 @@ std::vector<std::string> split(const std::string &s, char delim = ',') {
     return elems;
 }
 
-void printList(const ListNode* p) {
-    while (p) {
-        printf("%d", p->val);
-        if (p->next) {
-            printf(" -> ");
-        } else {
-            newline();
-        }
-        p = p->next;
-    }
-}
-
 int main() {
     Solution s;
     s.test();

@@ -64,6 +64,19 @@ using namespace std;
     cout << endl; \
 } while(0)
 
+#define PRINT_LIST(l) do {\
+    auto p = l; \
+    while (p) { \
+        printf("%d", p->val); \
+        if (p->next) { \
+            printf(" -> "); \
+        } else { \
+            newline(); \
+        } \
+        p = p->next; \
+    } \
+} while(0)
+
 #define PRINT_MATRIX(matrix) do { \
     for (auto row : matrix) { \
         PRINT_VEC(row); \
@@ -91,7 +104,5 @@ TreeNode* createTree(std::string s);
 ListNode* createList(std::string s);
 std::vector<std::string> split(const std::string &s, char delim);
 std::vector<int> createVector(std::string s);
-void printList(const ListNode*);
-//std::vector<vector<int>> createMatrix(std::string s);
 
 #endif

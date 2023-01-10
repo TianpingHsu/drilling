@@ -39,6 +39,8 @@
 * [happy-number](https://leetcode.cn/problems/happy-number/) -> [solu](./src/two_pointers/202.h)
 * [move-zeroes](https://leetcode.cn/problems/move-zeroes/) -> [solu](./src/two_pointers/283.h)
 * [trapping-rain-water](https://leetcode.cn/problems/trapping-rain-water/) -> [solu](./src/two_pointers/42.h)
+* [remove-duplicates-from-sorted-array](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) -> [solu](./src/two_pointers/26.h)
+* [remote-duplicates-from-sorted-list](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) -> [solu](./src/two_pointers/83.h)
 
 ## list
 * [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) -> [solu](./src/list/206.h)
