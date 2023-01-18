@@ -21,6 +21,8 @@
 | [fibonacci-number](https://leetcode.cn/problems/fibonacci-number/) | [solu](./src/dp/509.h)  |
 | [longest-increasing-subsequence](https://leetcode.cn/problems/longest-increasing-subsequence/) | [solu](./src/dp/300.h)  |
 | [coin-change](https://leetcode.cn/problems/coin-change/)     | [solu](./src/dp/322.h)  |
+| [best-time-to-buy-and-sell-stock](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [solu](./src/dp/121.h)  |
+| [best-best-to-buy-and-sell-sell-ii](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) | [solu](./src/dp/122.h) |
 
 
 
