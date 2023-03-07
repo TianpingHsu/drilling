@@ -28,11 +28,11 @@ class KMP {
     private:
         void buildDFA() {
             dfa[0][pat[0]] = 1;  // base case
-            for (int X = 0, i = 0; i < pat.size(); i++) {
+            for (int X = 0, i = 1; i < pat.size(); i++) {
                 for (int c = 0; c < ALPHABET_TABLE_SIZE; c++)  // for each char in ascii code table
                     dfa[i][c] = dfa[X][c];
                 dfa[i][pat[i]] = i + 1;  // match, go next
-                X = dfa[X][pat[i]];
+                X = dfa[X][pat[i]];  // update restart state, note that X <= i always keeps
             }
         }
 

@@ -9,4 +9,12 @@ int main() {
         KMP kmp(pat);
         printf("search result: %d\n", kmp.search(txt));
     }
+
+    {
+        txt = "AABAACAADAABAABA";
+        pat = "AABA";
+        KMP kmp(pat);
+        printf("search result: %d\n", kmp.search(txt));
+    }
 }
+
