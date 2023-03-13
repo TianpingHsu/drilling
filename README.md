@@ -60,6 +60,7 @@
 | [trapping-rain-water](https://leetcode.cn/problems/trapping-rain-water/) | [solu](./src/two_pointers/42.h) |
 | [remove-duplicates-from-sorted-array](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) | [solu](./src/two_pointers/26.h) |
 | [remote-duplicates-from-sorted-list](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | [solu](./src/two_pointers/83.h) |
+| [rotate-image](https://leetcode.cn/problems/rotate-image/) | [solu](./src/two_pointers/48.h) |
 
 
 
