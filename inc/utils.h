@@ -53,7 +53,7 @@ using namespace std;
         std::cout << "{" << x << "," << y << "}"; \
         printf(" %s != %s in %s() %s:%d\n" RESET, #a, #b, __func__, __FILE__, __LINE__); \
     } else { \
-        printf("pass.\n"); \
+        printf(GREEN "pass.\n" RESET); \
     }\
 } while(0)
 

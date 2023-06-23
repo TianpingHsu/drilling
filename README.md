@@ -69,3 +69,7 @@
 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) | [solu](./src/list/206.h) |
 | ------------------------------------------------------------ | ------------------------ |
 
+
+## misc
+| [implement-stack-using-queues](https://leetcode.cn/problems/implement-stack-using-queues/) | [solu](./src/misc/225.h) |
+| ------------------------------------------------------------------------------------------ | ------------------------ |
