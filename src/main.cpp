@@ -1,5 +1,5 @@
 #include "solu.h"
-#include "utils.h"
+#include "../inc/utils.h"
 
 TreeNode* createTree(string s) {
     for (auto it = s.begin(); it != s.end();) {
@@ -77,7 +77,9 @@ std::vector<std::string> split(const std::string &s, char delim = ',') {
 }
 
 int main() {
+#ifdef TEST
     Solution s;
     s.test();
+#endif
     return 0;
 }
