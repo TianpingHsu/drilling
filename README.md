@@ -73,5 +73,5 @@
 ## misc
 | [implement-stack-using-queues](https://leetcode.cn/problems/implement-stack-using-queues/) | [solu](./src/misc/225.h) |
 | ------------------------------------------------------------------------------------------ | ------------------------ |
-| [N 字形变换](https://leetcode.cn/problems/zigzag-conversion/description/) | [solu](./src/lc/5.h) |
+| [N 字形变换](https://leetcode.cn/problems/zigzag-conversion) | [solu](./src/lc/5.h) |
 
