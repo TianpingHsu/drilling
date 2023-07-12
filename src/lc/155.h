@@ -1,32 +1,48 @@
+
+#include "inc/utils.h"
+
 class MinStack {
-    stack<int> mins, s;
 public:
     MinStack() {
 
     }
-    
+
     void push(int val) {
-        if (s.empty()) {
-            s.push(val);
-            mins.push(val);
-        } else {
-            mins.push(std::min(mins.top(), val));
-            s.push(val);
+        a.push(val);
+        if (b.empty())
+            b.push(val);
+        else {
+            b.push(min(val, b.top()));
         }
     }
-    
+
     void pop() {
-        mins.pop();
-        s.pop();
+        a.pop();
+        b.pop();
     }
-    
+
     int top() {
-        return s.top();
+        return a.top();
     }
-    
+
     int getMin() {
-        return mins.top();
+        return b.top();
     }
+private:
+    stack<int> a, b;
+};
+
+class Solution {
+    public:
+        void test() {
+            MinStack s;
+            s.push(-2);
+            CHECK(s.getMin(), -2);
+            s.push(0);
+            CHECK(s.getMin(), -2);
+            s.push(-3);
+            CHECK(s.getMin(), -3);
+        }
 };
 
 /**
