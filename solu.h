@@ -1,50 +1,48 @@
 
+
 #include "inc/utils.h"
 
+// https://leetcode.cn/problems/perfect-squares/
 class Solution {
+    vector<int> squares;
+    map<int, int> memo;
+    const static int s_max = 1000000;
 public:
-    bool ancestor(TreeNode* p, TreeNode* q) {
-        if (!p) return false;
-        if (p == q) return true;
-        return ancestor(p->left, q) || ancestor(p->right, q);
-    }
-
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        if (!root) return nullptr;
-        if (root == p || root == q) return root;
-        bool a = ancestor(root->left, p);
-        if (a) {  // p is child of root->left
-            bool b = ancestor(root->left, q);
-            if (b) {  // both p and q are child of root->left
-                return lowestCommonAncestor(root->left, p, q);
-            } else {  // p is child of root->left, and q is not a child of root->left
-                return root;
-            }
-        } else {  // p is child of root->right
-            bool b = ancestor(root->right, q);
-            if (b) {  // both p and q are child of root->right
-                return lowestCommonAncestor(root->right, p, q);
-            } else {  // p is child of root->right, and q is not a child of root->right
-                return root;
-            }
+    Solution(): memo{{1, 1}} {}
+    int dfs(int n, int k) {
+        if (n < 0 || k < 0) return s_max;
+        if (memo.find(n) != memo.end()) return memo[n];
+        if (n == 0) return 0;
+        if (sqrt(n) * sqrt(n) == n) return 1;
+        int a = s_max, b = s_max;
+        if (n - squares[k] < 0) {
+            a = dfs(n, k - 1);
+        } else {
+            a = 1 + dfs(n - squares[k], k);
+            b = dfs(n, k - 1);
         }
+        //cout << "n: " << n << " k: " << k << " a: " << a << " b: " << b << endl;
+        return memo[n] = std::min(a, b);
     }
 
+    int numSquares(int n) {
+        for (int i = 1, sqr = i * i; sqr <= n;) {
+            squares.push_back(sqr);
+            i++;
+            sqr = i * i;
+        }
+#ifdef TEST
+        PRINT_VEC(squares);
+#endif
+        return dfs(n, squares.size() - 1);
+    }
 
 #ifdef TEST
-    TreeNode* search(TreeNode* root, int value) {
-        if (root == NULL) return NULL;
-        if (root->val == value) return root;
-        TreeNode* p = search(root->left, value);
-        if (p) return p;
-        return search(root->right, value);
-    }
     void test() {
-        TreeNode* root = createTree("[3,5,1,6,2,0,8,null,null,7,4]");
-        TreeNode* p = search(root, 5);
-        TreeNode* q = search(root, 1);
-        TreeNode* ret = lowestCommonAncestor(root, p, q);
-        CHECK(ret->val, 3);
+        CHECK(numSquares(12), 3);
+        //CHECK(numSquares(13), 2);
     }
 #endif
+
 };
+
