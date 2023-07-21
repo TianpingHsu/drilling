@@ -2,47 +2,46 @@
 
 #include "inc/utils.h"
 
-// https://leetcode.cn/problems/perfect-squares/
 class Solution {
-    vector<int> squares;
-    map<int, int> memo;
-    const static int s_max = 1000000;
 public:
-    Solution(): memo{{1, 1}} {}
-    int dfs(int n, int k) {
-        if (n < 0 || k < 0) return s_max;
-        if (memo.find(n) != memo.end()) return memo[n];
-        if (n == 0) return 0;
-        if (sqrt(n) * sqrt(n) == n) return 1;
-        int a = s_max, b = s_max;
-        if (n - squares[k] < 0) {
-            a = dfs(n, k - 1);
-        } else {
-            a = 1 + dfs(n - squares[k], k);
-            b = dfs(n, k - 1);
-        }
-        //cout << "n: " << n << " k: " << k << " a: " << a << " b: " << b << endl;
-        return memo[n] = std::min(a, b);
-    }
-
-    int numSquares(int n) {
-        for (int i = 1, sqr = i * i; sqr <= n;) {
-            squares.push_back(sqr);
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        multiset<int> s;
+        priority_queue<int> q;
+        vector<int> ret;
+        int i = 0;
+        while (i < k - 1) {
+            s.insert(nums[i]);
             i++;
-            sqr = i * i;
+        }
+        for (; i < nums.size(); i++) {
+            s.insert(nums[i]);
+            show(s);
+            ret.push_back(*s.rbegin());
+            s.erase(s.find(nums[i - k + 1]));
         }
 #ifdef TEST
-        PRINT_VEC(squares);
+        PRINT_VEC(ret);
 #endif
-        return dfs(n, squares.size() - 1);
+        return ret;
     }
 
 #ifdef TEST
     void test() {
-        CHECK(numSquares(12), 3);
-        //CHECK(numSquares(13), 2);
+#if 0
+        {
+            vector<int> v = createVector("[1,3,-1,-3,5,3,6,7]");
+            vector<int> ans{3,3,5,5,6,7};
+            CHECK((maxSlidingWindow(v, 3) == ans), true);
+        }
+#endif
+        {
+            vector<int> v = createVector("[-7,-8,7,5,7,1,6,0]");
+            show(v);
+            vector<int> ans{7,7,7,7,7};
+            CHECK((maxSlidingWindow(v, 4) == ans), true);
+        }
+
     }
 #endif
 
 };
-

@@ -1,29 +1,47 @@
 
-// brute force, timed out
 
-/*
+#include "inc/utils.h"
+
 class Solution {
 public:
     vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        int n = nums.size();
-        priority_queue<pair<int, int>> q;
-        for (int i = 0; i < k; ++i) {
-            q.emplace(nums[i], i);
+        multiset<int> s;
+        priority_queue<int> q;
+        vector<int> ret;
+        int i = 0;
+        while (i < k - 1) {
+            s.insert(nums[i]);
+            i++;
         }
-        vector<int> ans = {q.top().first};
-        for (int i = k; i < n; ++i) {
-            q.emplace(nums[i], i);
-            while (q.top().second <= i - k) {
-                q.pop();  // keep deleting, until the max one in our slide window
-            }
-            ans.push_back(q.top().first);
+        for (; i < nums.size(); i++) {
+            s.insert(nums[i]);
+            show(s);
+            ret.push_back(*s.rbegin());
+            s.erase(s.find(nums[i - k + 1]));
         }
-        return ans;
+#ifdef TEST
+        PRINT_VEC(ret);
+#endif
+        return ret;
     }
-};
 
-作者：LeetCode-Solution
-链接：https://leetcode.cn/problems/sliding-window-maximum/solution/hua-dong-chuang-kou-zui-da-zhi-by-leetco-ki6m/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-*/
+#ifdef TEST
+    void test() {
+#if 0
+        {
+            vector<int> v = createVector("[1,3,-1,-3,5,3,6,7]");
+            vector<int> ans{3,3,5,5,6,7};
+            CHECK((maxSlidingWindow(v, 3) == ans), true);
+        }
+#endif
+        {
+            vector<int> v = createVector("[-7,-8,7,5,7,1,6,0]");
+            show(v);
+            vector<int> ans{7,7,7,7,7};
+            CHECK((maxSlidingWindow(v, 4) == ans), true);
+        }
+
+    }
+#endif
+
+};

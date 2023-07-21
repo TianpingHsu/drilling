@@ -65,6 +65,13 @@ using namespace std;
     cout << endl; \
 } while(0)
 
+#define PRINT_SEQ(v) do { \
+    for (auto x : v) { \
+        cout << x << " "; \
+    } \
+    cout << endl; \
+} while(0)
+
 #define PRINT_LIST(l) do {\
     auto p = l; \
     while (p) { \
@@ -83,6 +90,12 @@ using namespace std;
         PRINT_VEC(row); \
     } \
 } while(0)
+
+#define PRINT_MAP(m) do { \
+    for (auto &[a, b] : m) { \
+        cout << a << " ," << b << endl; \
+    } \
+}while(0)
 
 #define OUT(x) do { \
     cout << x << endl; \
@@ -128,6 +141,14 @@ T vmin( T arg1, Args&&... args )
 
     return **std::min_element( begin(p), end(p),
             [](T *a, T *b) { return *a < *b; } );
+}
+
+template<typename T>
+void show(T seq) {
+    for (auto x : seq) {
+        cout << x << " ";
+    }
+    cout << endl;
 }
 
 TreeNode* createTree(std::string s);
