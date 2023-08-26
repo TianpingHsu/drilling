@@ -46,6 +46,19 @@ using namespace std;
 
 #define MSG(msg) do {cout << msg << endl;} while (0)
 
+#define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
+
+#define SHOW(fmt, ...) do { \
+    char buf[1024] = {0}; \
+    int n = snprintf(buf, sizeof(buf), "%s:%d %s ", __FILENAME__, __LINE__, __FUNCTION__); \
+    n = snprintf(buf + n, sizeof(buf) - n, fmt, ##__VA_ARGS__); \
+    if (n > sizeof(buf)) { \
+        printf("buffer overflow"); \
+        exit(-1); \
+    } \
+    printf(fmt, ##__VA_ARGS__); \
+} while (0)
+
 #define CHECK(a, b) do { \
     auto x = (a); \
     decltype(x) y = (b); \

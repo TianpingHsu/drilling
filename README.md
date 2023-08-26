@@ -74,6 +74,7 @@
 
 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) | [solu](./src/list/206.h) |
 | ------------------------------------------------------------ | ------------------------ |
+| [lru-cache](https://leetcode.cn/problems/lru-cache/) | [solu](./src/list/146.h) |
 
 
 ## misc
