@@ -65,7 +65,7 @@ using namespace std;
     if (x != y) { \
         printf(RED "FAILED! "); \
         std::cout << "{" << x << "," << y << "}"; \
-        printf(" %s != %s in %s() %s:%d\n" RESET, #a, #b, __func__, __FILE__, __LINE__); \
+        printf(" %s != %s in %s() %s:%d\n" RESET, #a, #b, __func__, __FILENAME__, __LINE__); \
     } else { \
         printf(GREEN "pass.\n" RESET); \
     }\

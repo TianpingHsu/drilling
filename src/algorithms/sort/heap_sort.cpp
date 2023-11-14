@@ -100,20 +100,3 @@ void MaxHeap::print() {
     }
 }
 
-int main()
-{
-    int a[] = {9, 1, 8, 3, 7, 2, 6, 5, 4};
-    {
-        MaxHeap h(a, sizeof(a)/sizeof(int));
-        h.heapify();
-        while (!h.empty()) {
-            printf("%d ", h.delMax());
-        }
-        printf("\n");
-    }
-    {
-        MaxHeap h(a, sizeof(a)/sizeof(int));
-        h.sort();
-        h.print();
-    }
-}

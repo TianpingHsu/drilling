@@ -1,5 +1,5 @@
 
-#include "../../../inc/utils.h"
+#include "utils.h"
 
 bool is_prime(const int n) {  // n >= 2
     int up_bound = sqrt(n);
@@ -9,13 +9,3 @@ bool is_prime(const int n) {  // n >= 2
     return true;
 }
 
-#ifdef TEST
-int main() {
-    for (int i = 2; i <= 100; i++) {
-        if (is_prime(i)) {
-            printf("%d is prime\n", i);
-        }
-    }
-    return 0;
-}
-#endif

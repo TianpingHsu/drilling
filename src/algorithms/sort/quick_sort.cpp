@@ -1,5 +1,5 @@
 
-#include "../../../inc/utils.h"
+#include "utils.h"
 
 // a[l...r]
 int partition(int *a, int l, int r) {
@@ -21,13 +21,4 @@ void quick_sort(int *a, int l, int r) {
     quick_sort(a, l, m - 1);
     quick_sort(a, m + 1, r);
 }
-
-#ifdef TEST
-int main() {
-    int a[] = {8, 1, 2, 9, 7, 5, 6, 0, 4, 3};
-    quick_sort(a, 0, sizeof(a)/sizeof(int) - 1);
-    for (auto x : a) printf("%d ", x);
-    newline();
-}
-#endif
 

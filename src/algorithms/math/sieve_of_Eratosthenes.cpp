@@ -16,18 +16,6 @@ int sieve_of_Eratosthenes(const int n) {
             }
         }
     }
-#ifdef TEST
-    for (int i = 2; i <= n; i++) {
-        if (is_prime[i]) printf("%d ", i);
-    }
-    newline();
-#endif
     return count;
 }
 
-#ifdef TEST
-int main() {
-    OUT(sieve_of_Eratosthenes(100));
-    return 0;
-}
-#endif
