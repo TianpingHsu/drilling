@@ -21,6 +21,8 @@
 //#include <format>
 #include "ListNode.h"
 #include "TreeNode.h"
+#include <catch2/catch_test_macros.hpp>
+#include <catch2/benchmark/catch_benchmark.hpp>
 using namespace std;
 
 // https://stackoverflow.com/questions/1961209/making-some-text-in-printf-appear-in-green-and-red
@@ -59,6 +61,7 @@ using namespace std;
     printf(fmt, ##__VA_ARGS__); \
 } while (0)
 
+/*
 #define CHECK(a, b) do { \
     auto x = (a); \
     decltype(x) y = (b); \
@@ -70,6 +73,7 @@ using namespace std;
         printf(GREEN "pass.\n" RESET); \
     }\
 } while(0)
+*/
 
 #define PRINT_VEC(v) do { \
     for (auto x : v) { \
@@ -163,6 +167,12 @@ void show(T seq) {
     }
     cout << endl;
 }
+
+enum SOLUTION {
+    SOLUTION_TOP_DOWN,
+    SOLUTION_TOP_DOWN_WITH_MEMO,
+    SOLUTION_BOTTOM_UP,
+};
 
 TreeNode* createTree(std::string s);
 ListNode* createList(std::string s);
