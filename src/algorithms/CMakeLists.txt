@@ -6,7 +6,7 @@ project(test_algo)
 
 include_directories(../../inc)
 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a -g")
 add_definitions("-Wall -g")
 
 file(GLOB_RECURSE SRC_FILES
