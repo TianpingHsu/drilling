@@ -4,7 +4,7 @@ find_package(Catch2 3 REQUIRED)
 
 project(test_algo)
 
-include_directories(../../inc)
+include_directories(./)
 
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++2a -g")
 add_definitions("-Wall -g")

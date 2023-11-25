@@ -1,6 +1,5 @@
 #include "utils.h"
 
-
 TreeNode* createTree(string s) {
     for (auto it = s.begin(); it != s.end();) {
         if (*it == ' ' || *it == '[' || *it == ']') {
@@ -75,3 +74,6 @@ std::vector<std::string> split(const std::string &s, char delim = ',') {
     }
     return elems;
 }
+
+//CATCH_CONFIG_DISABLE("MyTest");
+

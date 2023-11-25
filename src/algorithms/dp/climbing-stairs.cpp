@@ -31,7 +31,7 @@ int climbing_stairs_iter(int n) {
     return b;
 }
 
-TEST_CASE("DP with climbing stairs", "[ClimbingStairs]") {
+TEST_CASE("DP with climbing stairs", "[.][ClimbingStairs]") {
     REQUIRE(climbing_stairs_recur(5) == 8);
     REQUIRE(climbing_stairs_recur_with_memo(5) == 8);
     REQUIRE(climbing_stairs_iter(5) == 8);

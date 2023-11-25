@@ -73,7 +73,7 @@ int uniquePaths(int m, int n, int type) {
     }
 }
 
-TEST_CASE("DP with uniquePaths", "uniquePaths") {
+TEST_CASE("DP with uniquePaths", "[.][uniquePaths]") {
     REQUIRE(uniquePaths(3, 7, SOLUTION_TOP_DOWN_WITH_MEMO) == 28);
     REQUIRE(uniquePaths(3, 7, SOLUTION_BOTTOM_UP) == 28);
     REQUIRE(uniquePaths(3, 2, SOLUTION_TOP_DOWN_WITH_MEMO) == 3);

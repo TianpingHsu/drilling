@@ -48,7 +48,7 @@ int minCostClimbingStairs(const vector<int>& cost, int type) {
 }
 
 
-TEST_CASE("DP with min-cost-climbing-stairs", "[min-cost-climbing-stairs]") {
+TEST_CASE("DP with min-cost-climbing-stairs", "[.][min-cost-climbing-stairs]") {
     std::vector<int> cost = createVector("[10,15,20]");
     REQUIRE(minCostClimbingStairs(cost, SOLUTION_BOTTOM_UP) == 15);
     REQUIRE(minCostClimbingStairs(cost, SOLUTION_TOP_DOWN_WITH_MEMO) == 15);
