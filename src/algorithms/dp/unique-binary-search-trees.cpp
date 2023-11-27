@@ -46,7 +46,7 @@ int numTrees(int n, int type) {
     }
 }
 
-TEST_CASE("DP with numTrees", "[numTrees]") {
+TEST_CASE("DP with numTrees", "[.][numTrees]") {
     //REQUIRE(numTrees(3, 1) == 5);
     //REQUIRE(numTrees(1, 1) == 1);
     REQUIRE(numTrees(3, 0) == 5);

@@ -48,7 +48,7 @@ using namespace std;
 
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 
-#define SHOW(fmt, ...) do { \
+#define LOG(fmt, ...) do { \
     char buf[1024] = {0}; \
     int n = snprintf(buf, sizeof(buf), "%s:%d %s ", __FILENAME__, __LINE__, __FUNCTION__); \
     n = snprintf(buf + n, sizeof(buf) - n, fmt, ##__VA_ARGS__); \
@@ -171,6 +171,22 @@ enum SOLUTION {
     SOLUTION_TOP_DOWN_WITH_MEMO,
     SOLUTION_BOTTOM_UP,
 };
+
+#define SHOW2D(mat, m, n) do { \
+    for (int i = 0; i < m; i++) { \
+        for (int j = 0; j < n; j++) { \
+            cout << mat[i][j] << " "; \
+        } \
+        cout << endl; \
+    } \
+} while (0)
+
+#define SHOW1D(a, n) do { \
+        for (int i= 0; i < n; i++) { \
+            cout << a[i] << " "; \
+        } \
+        cout << endl; \
+} while (0)
 
 struct ListNode {
     int val;

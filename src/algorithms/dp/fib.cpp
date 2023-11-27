@@ -29,7 +29,7 @@ int fib_iter(int n) {
 }
 
 
-TEST_CASE("DP with Fibonacci", "[Fibonacci]") {
+TEST_CASE("DP with Fibonacci", "[.][Fibonacci]") {
     REQUIRE(fib_iter(5) == 5);
     REQUIRE(fib_recur(5) == 5);
     REQUIRE(fib_recur_with_memo(5) == 5);
