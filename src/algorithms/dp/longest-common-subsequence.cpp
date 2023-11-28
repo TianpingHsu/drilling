@@ -47,7 +47,7 @@ int longestCommonSubsequence(string text1, string text2) {
     return longest_common_subsequence(text1, text2);
 }
 
-TEST_CASE("DP with longestCommonSubsequence", "[longestCommonSubsequence]") {
+TEST_CASE("DP with longestCommonSubsequence", "[.][longestCommonSubsequence]") {
     std::string s1, s2;
     {
         s1 = "abcde";
