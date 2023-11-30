@@ -68,7 +68,7 @@ int countSubstrings(string s) {
     return palindromic_substrings(s);
 }
 
-TEST_CASE("DP with countSubstrings", "[countSubstrings]") {
+TEST_CASE("DP with countSubstrings", "[.][countSubstrings]") {
     std::string s;
     {
         s = "abc";
