@@ -36,7 +36,7 @@ int longestPalindromeSubseq(string s) {
     return longest_palindromic_subsequence(s);
 }
 
-TEST_CASE("DP with longestPalindromeSubseq", "[longestPalindromeSubseq]") {
+TEST_CASE("DP with longestPalindromeSubseq", "[.][longestPalindromeSubseq]") {
     std::string s;
     {
         s = "bbbab";

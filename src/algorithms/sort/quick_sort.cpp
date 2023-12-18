@@ -14,6 +14,18 @@ int partition(int *a, int l, int r) {
     return l;
 }
 
+/*
+// a[l, r)
+int partition(int *a, int l, int r) {
+    int pivot = l;
+    while (l < r)  {
+        while (l < r && a[r - 1] > a[pivot]) r--;
+        while (l < r && a[l] <= a[pivot]) l++;
+        std::swap(a[l], a[r - 1]);
+    }
+}
+*/
+
 // a[l...r]
 void quick_sort(int *a, int l, int r) {
     if (l >= r) return;

@@ -85,12 +85,13 @@ int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid, int type) {
                     memo[0][i] = 0;
                 }
             }
-            unique_paths_with_obstacles_recur_with_memo(obstacleGrid, m - 1, n - 1);
+            return unique_paths_with_obstacles_recur_with_memo(obstacleGrid, m - 1, n - 1);
             break;
         default:
-            unique_paths_with_obstacles_iter(obstacleGrid);
+            return unique_paths_with_obstacles_iter(obstacleGrid);
             break;
     }
+    return -1;
 }
 
 TEST_CASE("DP with uniquePathsWithObstacles", "[.][uniquePathsWithObstacles]") {
